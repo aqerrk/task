@@ -1,0 +1,289 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    position: fixed;
+    color:white;
+    border-bottom:1px solid white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-highlight {
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.language a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+
+.hero {
+    background-image: url(https://files.oaiusercontent.com/file-us27YYWbfF9QUsgVxeS19KdS?se=2024-11-02T16%3A53%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3585e233-689a-4bc0-a4f7-a9e3580f2891.webp&sig=DIFwRn8F%2BTvc59Qc51RJCq8oOmL5dqiWGIG%2B3hYgNBg%3D);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 80px; 
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: rgba(0, 123, 255, 0.566);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+
+@media (max-width: 470px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+section {
+    padding: 20px;
+    width: 100%;;
+    margin: 0 auto;
+}
+
+.taraz-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.taraz-intro .text {
+    max-width: 45%;
+}
+
+.taraz-intro h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.taraz-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.taraz-intro button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taraz-intro .image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.routes{
+    background-image: url(https://en.unesco.org/silkroad/sites/default/files/kyrgyz18.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.routes, .excursions {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.routes h2, .excursions h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.routes p, .excursions p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.route-cards, .excursion-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px 10px;
+}
+
+.excursion-cards .card p:first-of-type {
+    font-weight: bold;
+    color: #00aaff;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscribe-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #00aaff;
+}
+
+.footer-column p {
+    font-size: 16px;
+    color: #ccc;
+}
